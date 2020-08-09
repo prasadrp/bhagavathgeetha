@@ -1,0 +1,20 @@
+﻿/* --------------------------------
+	@import all the CSS
+--------------------------------*/
+
+
+
+/* 00 - Vendors */
+
+@import 'vendors/reset.css';
+@import 'vendors/normalize.css';
+
+
+
+/* 01 - Own */
+
+/* 01.01 - Styles */
+
+
+@import 'delivery/_main_styles.scss';
+@import 'delivery/_module_page_transit.scss';

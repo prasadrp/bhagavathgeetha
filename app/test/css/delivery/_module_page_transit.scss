@@ -1,0 +1,22 @@
+/* -------------------------------------
+  	Transition Overlay
+------------------------------------- */
+  
+.transit-overlay-simple {
+	  position: fixed;
+	  
+	  left:0;
+	  top:0;
+
+	  background-color: #73ee00;
+		
+	  height: 100%;
+	  width: 100%;
+	
+	  transform: scaleY(0);
+	  
+	  z-index: 1000;
+
+	  transform-origin: top center; 
+	
+}

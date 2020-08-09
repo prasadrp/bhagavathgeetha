@@ -1,0 +1,62 @@
+/* --------------------------------
+	@import all the CSS
+--------------------------------*/
+/* 00 - Vendors */
+@import url(vendors/reset.css);
+@import url(vendors/normalize.css);
+/* 01 - Own */
+/* 01.01 - Styles */
+/* -------------------------------------
+  	Main Styles
+------------------------------------- */
+html {
+  font-size: 100%; }
+
+main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
+
+/* --------------------------------
+  	Scroll-indicator
+--------------------------------*/
+.scroll-indicator {
+  position: fixed;
+  width: 1.0rem;
+  height: 10.0rem;
+  z-index: 10;
+  bottom: 0;
+  left: calc(50% - 0.5rem); }
+
+.scroll-indicator-main,
+.scroll-indicator-base {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transform-origin: center top; }
+
+.scroll-indicator-base {
+  background-color: #dedede; }
+
+.scroll-indicator-main {
+  background-color: #d50000;
+  transform: scaleY(0); }
+
+/* -------------------------------------
+  	Transition Overlay
+------------------------------------- */
+.transit-overlay-simple {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #73ee00;
+  height: 100%;
+  width: 100%;
+  transform: scaleY(0);
+  z-index: 1000;
+  transform-origin: top center; }
